@@ -53,7 +53,13 @@ input[type="search"]{
     background-color: #fdce23;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+}
+
 /* Styling Movie Container */
+
 #card-container{
     width: 25vh;
     height: 35rem;
@@ -76,5 +82,32 @@ input[type="search"]{
     justify-content: space-around;
     color: aliceblue;
 }
+/* spliting an screen into two part */
 
-/* Styling Favourite section  */
+.split-left{
+    width: 75%;
+    position: fixed;
+    right: -10rem;
+    float: left;
+}
+.split-right{
+    width: 25%;
+    height: 100%;
+    background-color: #1c1b1b;
+    position: fixed;
+    float: right;
+}
+
+/* Styling Favourite Section */
+section h1{
+    margin-left: 15px;
+    color: #f6c700;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.empty-fav-text{
+    margin-top: 50%;
+    color: #6c757d;
+    text-align: center;
+    word-spacing: 2px;
+}
