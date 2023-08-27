@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMDB</title>
+    <!-- css file -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- favicon icon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg"
+    />
+
+    <!-- Bootstrap  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar screen -->
+    <nav>
+      <div class="container-fluid">
+        <a href="index.html">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg"
+            alt="imbg-logo"
+            width="100"
+            height="50"
+          />
+        </a>
+        <a id="back-btn" href="index.html"
+          ><i class="fa-solid fa-backward"></i>Go Back
+        </a>
+      </div>
+    </nav>
+
+    <!-- Main container -->
+    <main>
+      <!-- title and rating -->
+      <div>
+        <h1>Movie Name</h1>
+        <p>1998</p>
+        <span>136min</span>
+      </div>
+      <div>
+        <h6>Rating</h6>
+        <span><i class="fa-solid fa-star"></i></span>6.9/10
+      </div>
+      <!-- Movie Container -->
+      <div style="width: 70vw;">
+        <div id="poster">
+            <img src="" alt="" />
+        </div>
+        <div id="plot">
+          <h3>Plot</h3>
+          <p>
+            A basketball player's father must try to convince him to go to a
+            college so he can get a shorter sentence.
+          </p>
+          <p>
+            Direction: 
+            <span id="director-name">Ashish Mehra</span>
+          </p>
+          <p>
+            Cast: 
+            <span id="cast-name">Avtar</span>
+          </p>
+          <p>
+            Genre:
+            <span id="genre-name">Drama, Sport</span>
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

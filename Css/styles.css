@@ -1,0 +1,77 @@
+/* Styling an Navbar */
+
+/* *{
+    background-color: #2c3333;
+} */
+
+.container-fluid {
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(33, 37, 41); 
+    display: inline-flex;
+    padding: 10px;
+}
+
+.search-bar{
+    margin-left: 25vw;
+}
+
+form {
+    width: inherit;
+    height: 45px;
+    display: flex;
+    border-radius: 50px;
+    background-color: rgb(109, 114, 121);
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 40vw;
+    height: 2.5rem;  
+    padding: 2rem;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+}
+
+input[type="search"]{
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+::placeholder{
+    opacity: 0.7;
+    color: #c9ccce;
+    font-size: large;
+}
+
+#search-btn{ 
+    width: 5rem;
+    height: 4.5rem;
+    border: 0;
+    font-size: x-large;
+    border: transparent;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    background-color: #fdce23;
+}
+
+/* Styling an Movie Container */
+#card-container{
+    width: 25vh;
+    height: 35rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #121515;
+    border-radius: 25px;
+    margin-left:50px;
+    justify-content: space-around;
+    overflow: hidden;
+    display: inline-block;
+}
+#movie-title{
+    text-align: center;
+    color: aliceblue;
+}
