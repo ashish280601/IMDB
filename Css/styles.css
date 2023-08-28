@@ -1,4 +1,9 @@
 /* Styling an Navbar */
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
 .container-fluid {
     width: 100vw;
     height: 10vh;
@@ -71,7 +76,7 @@ main{
     width: 25vh;
     height: 35rem;
     display: inline-block;
-    background-color: #121515;
+    background-color: #2c3333;
     border-radius: 10px;
     margin-left:50px;
     justify-content: space-around;
