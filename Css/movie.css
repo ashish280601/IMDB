@@ -1,51 +1,31 @@
-@import url(styles.css);
-
-/* styling an back button */
-#back-btn {
-  width: 10rem;
-  height: 4.5rem;
-  border-radius: 12px;
-  text-align: center;
-  font-size: larger;
-  margin-left: 85%;
-  padding-top: 1rem;
-  background-color: #f6c700;
-  color: black;
-  text-decoration: none;
+/* CSS Variables */
+:root {
+  --default-text-color: #fff;
+  --logo-color: rgb(253, 206, 35);
+  --page-background-color: #2c3333;
+  --card-text-color: rgb(232, 233, 243);
+  --info-color: #7dabef;
 }
 
-.movie-container {
-  display: inline-block;
-}
-#movie-info {
-  width: 12rem;
-  height: 10rem;
-  margin-left: 36rem;
-  padding-top: 6rem;
-}
-#movie-rate {
-  width: 10rem;
-  height: 5rem;
-  margin-left: 118rem;
-}
-#movie-rate p {
-    font-size: larger;
-    font-weight: bolder;
-    color: #212529;
-}
-#movie-year, #movie-time{
-    margin-left: 5px;
-    color: goldenrod;
-    font-weight: bolder;
+body {
+  background-color: var(--page-background-color);
+  color: var(--default-text-color);
 }
 
-.movie-details {
-  width: 60vw;
-  height: 50vh;
-  margin-left: 35rem;
-  border-radius: 15px;
-  overflow: hidden;
-  display: flex;
+/* NAVBAR */
+.fa-star {
+  color: var(--logo-color);
+}
+
+.site-name {
+  color: var(--logo-color);
+  position: absolute;
+  top: 0px;
+}
+
+/* Movie card*/
+.card {
+  border: 0;
   background: radial-gradient(
     circle at 10% 20%,
     rgb(0, 0, 0) 0%,
@@ -55,9 +35,50 @@
     0px 6px 30px 5px hsla(0, 0%, 0%, 0.12),
     0px 8px 10px -5px hsla(0, 0%, 0%, 0.2);
 }
-#plot{
-    margin: 3rem 0 0 2rem;
-    color: aliceblue;
-    font-size: larger;
-    word-spacing: 0.3rem;
+
+.card-text {
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--card-text-color);
+}
+
+.info-type {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--logo-color);
+}
+
+.information {
+  font-weight: 500;
+  font-size: 0.9em;
+  color: var(--info-color);
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 767px) {
+  #poster {
+    margin-top: 1rem;
+    border-radius: 5px !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #title {
+    font-size: x-large;
+  }
+
+  h6 {
+    font-size: medium;
+  }
+
+  h5 {
+    font-size: medium;
+  }
+
+  #poster {
+    margin-top: 0px;
+    width: 100%;
+  }
 }
